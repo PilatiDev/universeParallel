@@ -1,0 +1,160 @@
+:root {
+  --nav-height: 80px;
+  --accent: #6C63FF;
+  --accent-2: #00f7ff;
+  --bg-1: #0f0c29;
+  --bg-2: #302b63;
+  --bg-3: #24243e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Orbitron", Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, var(--bg-1), var(--bg-2), var(--bg-3));
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* HEADER */
+.menu {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  background: linear-gradient(90deg, #241f4e, var(--accent));
+  border-bottom: 3px solid var(--accent);
+  z-index: 1000;
+}
+
+#logoId {
+  height: 60px;
+  width: auto;
+}
+
+.menu-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.menu-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: color .2s;
+}
+
+.menu-links li a:hover,
+.menu-links li a.active {
+  color: var(--accent-2);
+}
+
+/* HERO */
+.hero {
+  padding: 140px 20px 80px;
+  text-align: center;
+  background: rgba(0,0,0,0.2);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  color: var(--accent-2);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* SECTIONS */
+.section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 16px;
+  font-size: 1.8rem;
+  color: var(--accent);
+}
+
+.section p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* CATEGORIES */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 12px;
+  width: 280px;
+  text-align: center;
+  transition: transform .2s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card h3 {
+  margin: 10px 0;
+  color: var(--accent-2);
+}
+
+/* NASA APOD */
+.apod-box {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.apod-box img {
+  /* max-width: 100%; */
+  width: 650px;
+  height: 450px;
+  border-radius: 12px;
+  margin-top: 15px;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.6);
+}
+
+/* FOOTER */
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  background: rgba(0,0,0,0.3);
+}
+
+footer a {
+  color: var(--accent-2);
+  margin: 0 6px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

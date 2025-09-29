@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pilati - Sign In</title>
+  <link rel="stylesheet" href="styleLogin.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <nav class="menu" role="navigation" aria-label="Main">
+      <div class="logo-content">
+        <a href="homeverse.html" aria-label="Pilati home">
+          <img src="/src/img/logo.png" alt="Pilati Logo" id="logoId" />
+        </a>
+      </div>
+
+      <div class="menu-center">
+        <ul class="menu-links" role="menubar">
+          <li role="none"><a role="menuitem" href="homeverse.html">Home</a></li>
+          <li role="none"><a role="menuitem" href="login.html" class="active">Sign In</a></li>
+          <li role="none"><a role="menuitem" href="signup.html">Sign Up</a></li>
+          <li role="none"><a role="menuitem" href="#">Support</a></li>
+          <li role="none"><a role="menuitem" href="#">About Us</a></li>
+        </ul>
+      </div>
+
+      <div class="menu-right">
+        <!-- reserved for future actions (profile / CTA) -->
+      </div>
+    </nav>
+  </header>
+
+  <main class="login-section" role="main">
+    <article class="login-container" aria-labelledby="login-title">
+      <h1 id="login-title">Sign in to the Metaverse</h1>
+      <p class="subtitle">Enter your credentials to access new realities.</p>
+
+      <form class="login-form" action="#" method="post" novalidate>
+        <label class="sr-only" for="username">Username or email</label>
+        <input id="username" name="username" type="text" placeholder="Username or email" required autocomplete="username" />
+
+        <label class="sr-only" for="password">Password</label>
+       
+  <div class="password-field">
+  <input id="password" name="password" type="password" placeholder="Password" required autocomplete="current-password" />
+
+</div>
+
+
+        <div class="form-options">
+          <label class="remember">
+            <input type="checkbox" name="remember" /> Remember me
+          </label>
+          <a class="forgot-link" href="#">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="btn-login">Login</button>
+
+        <p class="signup-text">Don’t have an account? <a href="signup.html">Sign up</a></p>
+
+        <div class="divider" aria-hidden="true">or continue with</div>
+
+        <div class="social-login" aria-hidden="true">
+          <button type="button" class="btn-social google">Google</button>
+          <button type="button" class="btn-social github">GitHub</button>
+        </div>
+      </form>
+    </article>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer-content">
+      <p>© 2025 Pilati - All rights reserved.</p>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Privacy Policy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    function togglePassword() {
+      const pwd = document.getElementById("password");
+      const btn = document.querySelector(".toggle-password");
+      if (!pwd) return;
+      if (pwd.type === "password") {
+        pwd.type = "text";
+        btn.setAttribute("aria-pressed", "true");
+      } else {
+        pwd.type = "password";
+        btn.setAttribute("aria-pressed", "false");
+      }
+    }
+
+    // Optional: basic client-side form visual validation (prevent submit demo)
+    document.querySelector(".login-form")?.addEventListener("submit", function (e) {
+      // demo: prevent actual submit so you can test layout
+      e.preventDefault();
+      // Here you would call your API / authentication logic
+      alert("Form submitted (demo) — integrate your auth API here.");
+    });
+  </script>
+</body>
+</html>
