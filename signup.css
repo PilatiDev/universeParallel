@@ -30,12 +30,11 @@ body {
   border-bottom: 2px solid #6C63FF;
   z-index: 1000;
 }
-
 .menu-links {
   display: flex;
   gap: 35px;
+  list-style: none;
 }
-
 .menu-links a {
   color: #fff;
   font-weight: 500;
@@ -43,7 +42,6 @@ body {
   text-decoration: none;
   transition: 0.3s;
 }
-
 .menu-links a:hover,
 .menu-links a.active {
   color: #00f7ff;
@@ -57,7 +55,6 @@ body {
   align-items: center;
   padding: 100px 20px 40px;
 }
-
 .signup-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -74,14 +71,12 @@ body {
 .signup-image {
   text-align: center;
 }
-
 .signup-image img {
   width: 100%;
   max-width: 320px;
   border-radius: 10px;
   margin-bottom: 15px;
 }
-
 .signup-text {
   font-size: 0.95rem;
   line-height: 1.5;
@@ -96,24 +91,20 @@ body {
   color: #6C63FF;
   text-align: left;
 }
-
 .signup-box form {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
-
 .input-group {
   display: flex;
   flex-direction: column;
 }
-
 .signup-box label {
   font-size: 0.85rem;
   margin-bottom: 5px;
   color: #bbb;
 }
-
 .signup-box input {
   padding: 12px;
   border: 1px solid rgba(108, 99, 255, 0.6);
@@ -123,11 +114,9 @@ body {
   font-size: 0.95rem;
   transition: 0.3s;
 }
-
 .signup-box input::placeholder {
   color: #888;
 }
-
 .signup-box input:focus {
   border-color: #00f7ff;
   box-shadow: 0 0 10px #00f7ff;
@@ -146,7 +135,6 @@ body {
   cursor: pointer;
   transition: 0.3s;
 }
-
 .btn-cadastro:hover {
   background: linear-gradient(90deg, #00f7ff, #6C63FF);
   transform: translateY(-2px);
@@ -158,13 +146,11 @@ body {
   font-size: 0.85rem;
   color: #bbb;
 }
-
 .login-link a {
   color: #6C63FF;
   font-weight: 500;
   text-decoration: none;
 }
-
 .login-link a:hover {
   color: #00f7ff;
 }
@@ -173,27 +159,26 @@ body {
 .footer {
   background: rgba(15, 15, 35, 0.95);
   color: #fff;
-  padding: 20px;
+  padding: 18px;
+  margin-top: auto;
 }
-
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  gap: 15px;
+  gap: 6px;
+  text-align: center;
 }
-
-.footer a {
-  color: #6C63FF;
-  text-decoration: none;
-  margin-left: 15px;
-  transition: 0.3s;
+.footer-content p {
+  font-size: 0.75rem;
+  color: #aaa;
 }
-
-.footer a:hover {
+.footer-links a {
+  margin: 0 8px;
+  font-size: 0.75rem;
+  color: #aaa;
+}
+.footer-links a:hover {
   color: #00f7ff;
 }
 
@@ -204,13 +189,11 @@ body {
     text-align: center;
     padding: 25px;
   }
-
   .signup-box h2,
   .signup-box label,
   .login-link {
     text-align: center;
   }
-
   .signup-image img {
     max-width: 250px;
   }

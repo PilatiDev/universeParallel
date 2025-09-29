@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Pilati - Sign In</title>
+  <title>Pilati - Login</title>
   <link rel="stylesheet" href="styleLogin.css" />
 </head>
 <body>
@@ -17,17 +17,15 @@
 
       <div class="menu-center">
         <ul class="menu-links" role="menubar">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="login.html">Login</a></li>
-          <li><a href="signup.html">Sing Up</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="login.html" class="active">Login</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
           <li><a href="#">Support</a></li>
           <li><a href="#">About Us</a></li>
         </ul>
       </div>
 
-      <div class="menu-right">
-        <!-- reserved for future actions (profile / CTA) -->
-      </div>
+      <div class="menu-right"></div>
     </nav>
   </header>
 
@@ -37,16 +35,10 @@
       <p class="subtitle">Enter your credentials to access new realities.</p>
 
       <form class="login-form" action="#" method="post" novalidate>
-        <label class="sr-only" for="username">Username or email</label>
         <input id="username" name="username" type="text" placeholder="Username or email" required autocomplete="username" />
-
-        <label class="sr-only" for="password">Password</label>
-       
-  <div class="password-field">
-  <input id="password" name="password" type="password" placeholder="Password" required autocomplete="current-password" />
-
-</div>
-
+        <div class="password-field">
+          <input id="password" name="password" type="password" placeholder="Password" required autocomplete="current-password" />
+        </div>
 
         <div class="form-options">
           <label class="remember">
@@ -81,25 +73,9 @@
   </footer>
 
   <script>
-    function togglePassword() {
-      const pwd = document.getElementById("password");
-      const btn = document.querySelector(".toggle-password");
-      if (!pwd) return;
-      if (pwd.type === "password") {
-        pwd.type = "text";
-        btn.setAttribute("aria-pressed", "true");
-      } else {
-        pwd.type = "password";
-        btn.setAttribute("aria-pressed", "false");
-      }
-    }
-
-    // Optional: basic client-side form visual validation (prevent submit demo)
     document.querySelector(".login-form")?.addEventListener("submit", function (e) {
-      // demo: prevent actual submit so you can test layout
       e.preventDefault();
-      // Here you would call your API / authentication logic
-      alert("Form submitted (demo) — integrate your auth API here.");
+      alert("Form submitted (demo)");
     });
   </script>
 </body>
