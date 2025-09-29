@@ -9,13 +9,10 @@
 <body>
   <!-- Menu -->
   <nav class="menu">
-    <div class="logo-content">
-      <img src="/src/img/logo.png" alt="Logo Pilati" id="logoId">
-    </div>
     <div class="menu-center">
       <div class="menu-links">
         <a href="login.html">Home</a>
-        <a href="signup.html">Sign Up</a>
+        <a href="signup.html" class="active">Sign Up</a>
         <a href="#">Support</a>
         <a href="#">Work with us</a>
         <a href="#">Who we are</a>
@@ -26,32 +23,32 @@
   <!-- Sign Up -->
   <main class="signup-container">
     <section class="signup-wrapper">
-      <!-- Lado esquerdo (imagem + texto convidativo) -->
+      <!-- Lado esquerdo -->
       <div class="signup-image">
-        <img id="gifSignUpID" src="src/img/gifSignUpBanner.gif" alt="Sign Up Banner">
-        <br>
+        <img src="src/img/parallel-universe-science-theory-royalty-free-image-1755106690.jpeg" alt="Sign Up Banner">
         <p class="signup-text">
-           &nbsp Join our platform today and unlock exclusive features, personalized tools, 
-          and a community built to help you grow.
-          </p>
-        <p class="signup-text">   
-           &nbsp Sign up now and take the first step 
-          toward a better digital experience.
+          Join our platform today and unlock exclusive features.
         </p>
       </div>
 
-      <!-- Lado direito (formulário) -->
+      <!-- Formulário -->
       <div class="signup-box">
         <h2>Create your account</h2>
         <form>
-          <label for="username">Username</label>
-          <input type="text" id="username" placeholder="Enter your username" required>
+          <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter your username" required>
+          </div>
 
-          <label for="email">E-mail</label>
-          <input type="email" id="email" placeholder="Enter your email" required>
+          <div class="input-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+          </div>
 
-          <label for="password">Password</label>
-          <input type="password" id="password" placeholder="Enter your password" required>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+          </div>
 
           <button type="submit" class="btn-cadastro">Create</button>
         </form>
