@@ -7,33 +7,29 @@
   <link rel="stylesheet" href="signup.css">
 </head>
 <body>
-  <!-- Menu -->
-  <nav class="menu">
-    <div class="menu-center">
-      <ul class="menu-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="signup.html" class="active">Register</a></li>
-        <li><a href="#">Support</a></li>
-        <li><a href="#">About Us</a></li>
-      </ul>
-    </div>
-  </nav>
+  <header class="site-header" role="banner">
+    <nav class="menu" role="navigation" aria-label="Menu principal">
+      <div class="menu-center">
+        <ul class="menu-links" role="menubar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="signup.html" class="active">Register</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-  <!-- Sign Up -->
-  <main class="signup-container">
-    <section class="signup-wrapper">
-      <!-- Lado esquerdo -->
+  <main class="signup-container" role="main">
+    <section class="signup-wrapper" aria-labelledby="signup-title">
       <div class="signup-image">
-        <img src="src/img/parallel-universe-science-theory-royalty-free-image-1755106690.jpeg" alt="Sign Up Banner">
-        <p class="signup-text">
-          Join our platform today and unlock exclusive features.
-        </p>
+        <img src="../src/img/parallel-universe-science-theory-royalty-free-image-1755106690.jpeg" alt="Sign Up Banner">
+        <p class="signup-text">Join our platform today and unlock exclusive features.</p>
       </div>
 
-      <!-- Formulário -->
       <div class="signup-box">
-        <h2>Create your account</h2>
+        <h1 id="signup-title">Create your account</h1>
         <form>
           <div class="input-group">
             <label for="username">Username</label>
@@ -57,11 +53,10 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer" role="contentinfo">
     <div class="footer-content">
       <p>© 2025 Pilati - All rights reserved.</p>
-      <nav class="footer-links">
+      <nav class="footer-links" aria-label="Rodapé">
         <a href="#">About</a>
         <a href="#">Contact</a>
         <a href="#">Privacy Policy</a>
